@@ -6,31 +6,26 @@
 <style>
 #container {
     margin: 20px;
-    padding: 10px;
-    border: 1px solid #000;
-    text-align: center;
 }
 
 #container::before {
-    content: "This text is before the container";
+    content: "Before text";
     color: #f00;
     font-size: 20px;
     display: block;
-    margin-bottom: 10px;
 }
 
 #container::after {
-    content: "This text is after the container";
+    content: "After text";
     color: #f00;
     font-size: 20px;
     display: block;
-    margin-top: 10px;
 }
 </style>
 </head>
 <body>
 <div id="container">
-    Main container content goes here.
+    Container content
 </div>
 </body>
 </html>
