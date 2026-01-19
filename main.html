@@ -2,30 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Pseudo-Elements Example</title>
+<title>Pseudo Elements</title>
 <style>
 #container {
     margin: 20px;
 }
 
 #container::before {
-    content: "Before text";
+    content: "Before";
     color: #f00;
     font-size: 20px;
-    display: block;
 }
 
 #container::after {
-    content: "After text";
+    content: "After";
     color: #f00;
     font-size: 20px;
-    display: block;
 }
 </style>
 </head>
 <body>
-<div id="container">
-    Container content
-</div>
+<div id="container"></div>
 </body>
 </html>
