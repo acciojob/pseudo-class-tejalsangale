@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Pseudo-Elements Example</title>
+<style>
+#container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+#container::before {
+    content: "This text is before the container";
+    color: #f00;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#container::after {
+    content: "This text is after the container";
+    color: #f00;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+}
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+<div id="container">
+    Main container content goes here.
+</div>
 </body>
-
 </html>
